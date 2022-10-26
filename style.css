@@ -33,8 +33,10 @@ header{
   padding: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("images/header-illsutration-mobile@2x.png");
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 header h1, p{
@@ -55,4 +57,17 @@ header p{
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+}
+header ul{
+  margin: 50px 24px 0 24px;
+  padding: 0;
+  width: 170px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: red;
+}
+header ul li{
+  width: 20px;
+  height: 20px;
 }
