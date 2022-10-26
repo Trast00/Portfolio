@@ -10,11 +10,7 @@ nav {
   justify-content: space-between;
   background-color: bisque;
 }
-nav ul{
-    display: flex;
-    list-style: none;
-}
-nav h1, a, ul li{
+nav h1, a{
     margin: 0; /* remove default margin and padding */
     padding: 10px 25px 10px 25px;
     background-color: aquamarine;
