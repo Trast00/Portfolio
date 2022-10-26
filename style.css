@@ -1,25 +1,28 @@
 body {
   /* remove default margin and padding */
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Inter var', sans-serif;;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter var', sans-serif;
 }
+
 nav {
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 100vw;
   height: 48px;
   display: flex;
   justify-content: space-between;
   background-color: white;
-  color: #28352F;
+  color: #28352f;
 }
+
 nav h1 {
   display: flex;
   align-items: center;
   padding: 10px 12px;
   margin: 0;
 }
+
 nav .toggleNav {
   width: 40px;
   height: 40px;
@@ -28,7 +31,7 @@ nav .toggleNav {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #28352F;
+  color: #28352f;
 }
 
 header{
@@ -42,25 +45,30 @@ header{
   background-position: top;
   background-size: cover;
 }
+
 header h1, p{
   text-align: center;
   margin: 50px 24px 0 24px;
-  color: #172B4D;
+  color: #172b4d;
 }
+
 header h1{
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   
 }
+
 header h1 span{
-  color: #36B37E;
+  color: #36b37e;
 }
+
 header p{
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
+
 header ul  {
   margin: 60px 24px 0 24px;
   padding: 0;
@@ -69,22 +77,24 @@ header ul  {
   display: flex;
   justify-content: space-evenly;
 }
+
 header ul li {
   width: 20px;
   height: 20px;
-  color: #28352F;
+  color: #28352f;
 }
+
 header a {
   width: 40px;
   height: 40px;
   text-decoration: none;
   margin-top: 100px;
-  color: #28352F;
+  color: #28352f;
   text-decoration: none;
 }
 
 .btn-round{
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 50%;
   display: flex;
   justify-content: center;
