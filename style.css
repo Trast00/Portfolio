@@ -1,0 +1,21 @@
+body{
+    /* remove default margin and padding */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: bisque;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav h1, a, ul li{
+    margin: 0; /* remove default margin and padding */
+    padding: 10px 25px 10px 25px;
+    background-color: aquamarine;
+}
