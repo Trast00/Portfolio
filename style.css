@@ -58,16 +58,25 @@ header p{
   font-size: 20px;
   line-height: 28px;
 }
-header ul{
-  margin: 50px 24px 0 24px;
+header ul  {
+  margin: 60px 24px 0 24px;
   padding: 0;
   width: 170px;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  background-color: red;
 }
-header ul li{
+header ul li {
   width: 20px;
   height: 20px;
+}
+header a {
+  width: 40px;
+  height: 40px;
+  margin-top: 100px;
+}
+
+.btn-round{
+  border: 1px solid #DFE1E6;
+  border-radius: 50%;
 }
