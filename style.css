@@ -3,6 +3,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter var', sans-serif;
+  --color-primary-dark: #36b37e;
+  --color-primary: #c5e9da;
+  --color-primary-light: #ebf0ee;
+  --color-secondary: #172b4d;
+  --color-text: #28352f;
 }
 
 nav {
@@ -13,7 +18,7 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  color: #28352f;
+  color: var(--color-text);
 }
 
 nav h1 {
@@ -31,7 +36,7 @@ nav .toggleNav {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #28352f;
+  color: var(--color-text);
 }
 
 header {
@@ -50,7 +55,7 @@ header h1,
 p {
   text-align: center;
   margin: 50px 24px 0 24px;
-  color: #172b4d;
+  color: var(--color-secondary);
 }
 
 header h1 {
@@ -60,7 +65,7 @@ header h1 {
 }
 
 header h1 span {
-  color: #36b37e;
+  color: var(--color-primary-dark);
 }
 
 header p {
@@ -81,7 +86,7 @@ header ul {
 header ul li {
   width: 20px;
   height: 20px;
-  color: #28352f;
+  color: var(--color-text);
 }
 
 header a {
@@ -89,7 +94,7 @@ header a {
   height: 40px;
   text-decoration: none;
   margin-top: 100px;
-  color: #28352f;
+  color: var(--color-text);
 }
 
 .btn-round {
