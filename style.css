@@ -12,6 +12,7 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: white;
+  color: #28352F;
 }
 nav h1 {
   display: flex;
@@ -19,13 +20,15 @@ nav h1 {
   padding: 10px 12px;
   margin: 0;
 }
-nav a {
+nav .toggleNav {
   width: 40px;
   height: 40px;
   margin: 4px 24px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #28352F;
 }
 
 header{
@@ -73,10 +76,14 @@ header ul li {
 header a {
   width: 40px;
   height: 40px;
+  text-decoration: none;
   margin-top: 100px;
 }
 
 .btn-round{
   border: 1px solid #DFE1E6;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
