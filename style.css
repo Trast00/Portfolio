@@ -34,7 +34,7 @@ nav .toggleNav {
   color: #28352f;
 }
 
-header{
+header {
   margin: 50px 0; /* heigh of nav =48px */
   padding: 0;
   display: flex;
@@ -46,30 +46,30 @@ header{
   background-size: cover;
 }
 
-header h1, p{
+header h1, p {
   text-align: center;
   margin: 50px 24px 0 24px;
   color: #172b4d;
 }
 
-header h1{
+header h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   
 }
 
-header h1 span{
+header h1 span {
   color: #36b37e;
 }
 
-header p{
+header p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
 
-header ul  {
+header ul {
   margin: 60px 24px 0 24px;
   padding: 0;
   width: 170px;
@@ -93,7 +93,7 @@ header a {
   text-decoration: none;
 }
 
-.btn-round{
+.btn-round {
   border: 1px solid #dfe1e6;
   border-radius: 50%;
   display: flex;
