@@ -1,17 +1,30 @@
-body{
-    /* remove default margin and padding */
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
+body {
+  /* remove default margin and padding */
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Inter var', sans-serif;;
 }
 nav {
+  position: absolute;
+  top: 0px;
   width: 100vw;
+  height: 48px;
   display: flex;
   justify-content: space-between;
-  background-color: bisque;
 }
-nav h1, a{
-    margin: 0; /* remove default margin and padding */
-    padding: 10px 25px 10px 25px;
-    background-color: aquamarine;
+nav h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  margin: 0;
 }
+nav a {
+  width: 40px;
+  height: 40px;
+  margin: 4px 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
