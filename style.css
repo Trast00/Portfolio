@@ -4,9 +4,9 @@ body {
   padding: 0;
   font-family: 'Inter var', sans-serif;
 
-  --color-primary-dark: #36b37e;
-  --color-primary: #c5e9da;
-  --color-primary-light: #ebf0ee;
+  --color-primary-dark: #ff6163;
+  --color-primary: #ffe7e8;
+  --color-primary-light: #f9eaea;
   --color-secondary: #172b4d;
   --color-text: #28352f;
 }
