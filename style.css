@@ -1,0 +1,116 @@
+body {
+  /* remove default margin and padding */
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter var', sans-serif;
+
+  --color-primary-dark: #ff6163;
+  --color-primary: #ffe7e8;
+  --color-primary-light: #f9eaea;
+  --color-secondary: #172b4d;
+  --color-text: #28352f;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: var(--color-text);
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  margin: 0;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+header .toggleNav {
+  width: 40px;
+  height: 40px;
+  margin: 4px 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+#headline {
+  margin: 50px 0; /* heigh of header =48px */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/header-illsutration-mobile@2x.png");
+  background-position: top;
+  background-size: cover;
+}
+
+#headline h1,
+p {
+  text-align: center;
+  margin: 50px 24px 0 24px;
+  color: var(--color-secondary);
+}
+
+#headline h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+#headline h1 span {
+  color: var(--color-primary-dark);
+}
+
+#headline p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#headline ul {
+  margin: 60px 24px 0 24px;
+  padding: 0;
+  width: 170px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#headline a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  margin-top: 100px;
+  color: var(--color-text);
+}
+
+#headline .social {
+  width: 20px;
+  height: 20px;
+  color: var(--color-text);
+}
+
+#headline .social:hover {
+  color: var(--color-primary-dark);
+}
+
+.btn-round {
+  border: 1px solid #dfe1e6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
