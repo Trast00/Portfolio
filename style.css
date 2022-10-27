@@ -29,7 +29,7 @@ header h1 {
   margin: 0;
 }
 
-header h1 a{
+header h1 a {
   text-decoration: none;
   color: var(--color-text);
 }
@@ -97,7 +97,7 @@ p {
   color: var(--color-text);
 }
 
-#headline .social{
+#headline .social {
   width: 20px;
   height: 20px;
   color: var(--color-text);
