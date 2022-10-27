@@ -9,6 +9,7 @@ body {
   --color-primary-light: #f9eaea;
   --color-secondary: #172b4d;
   --color-text: #28352f;
+  --color-border: #e2cfcf
 }
 
 .tags {
@@ -35,6 +36,13 @@ body {
   font-size: 17px;
   line-height: 24px;
   background-color: var(--color-primary-dark);
+}
+
+.buttons:hover {
+  box-shadow: 0px 8px 16px rgba(255, 97, 99, 0.24);
+}
+.buttons:disabled {
+  background: #dd5153;
 }
 
 .section-title{
@@ -170,14 +178,14 @@ p {
   justify-content: center;
   align-items: center;
   list-style: none;
-  grid-row: 3 / 4;
   padding: 0; /* remove default padding */
+  grid-row: 3 / 4;
 }
 
 #works ul .work {
   width: 325px;
   height: 500px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -205,13 +213,19 @@ p {
   margin-top: 6px;
 }
 
-#works ul .work div .list-languages {
+.list-tag {
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 16px;
+}
+
+#works ul .work ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 #works ul .work div button {
@@ -227,8 +241,14 @@ p {
   line-height: 24px;
   background-color: var(--color-primary-dark);
 }
-
 #aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutme .resume {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,18 +256,67 @@ p {
   background: url("images/illustration-aboutme-mobile.png");
   background-position: top;
   background-size: cover;
+  margin-bottom: 50px;
 }
 
-#aboutme h2 {
+#aboutme div h2 {
   text-align: center;
   margin: 50px 12px 24px 12px;
 }
 
-#aboutme p {
+#aboutme div p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   margin: 0 12px 24px 12px;
+}
+
+#aboutme .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#aboutme .skills .skill {
+  margin-top: 24px;
+  width: 325px;
+  height: 375px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-primary-light);
+}
+
+#aboutme .skills .skill img {
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  margin-top: 40px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+}
+
+#aboutme .skills .skill h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #633434;
+  margin: 60px 0 0 0;
+}
+
+#aboutme .skills .skill ul{
+  justify-content: center;
+  padding: 0;
+}
+
+#aboutme .skills .skill li {
+  background-color: white;
 }
