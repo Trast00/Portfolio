@@ -51,6 +51,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  color: var(--color-secondary);
 }
 
 header {
@@ -159,6 +160,7 @@ p {
 
 #works h2 {
   text-align: center;
+  font-size: 45px;
   grid-row: 1 / 2;
   padding: 0;
   margin: 0;
