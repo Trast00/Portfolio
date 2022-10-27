@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter var', sans-serif;
-  background-color: #E5E5E5;
 
   --color-primary-dark: #ff6163;
   --color-primary: #ffe7e8;
@@ -138,5 +137,6 @@ p {
 
 #works .work {
   background-color: white;
+  border: 1px solid #D0D9D4;
   border-radius: 8px;
 }
