@@ -138,20 +138,20 @@ p {
   background-color: var(--color-primary-dark);
   border-radius: 24px;
   grid-row: 2 / 3;
-  order: 3;
 }
 
 #works ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  display: grid;
   grid-row: 3 / 4;
-  order: -1;
+  padding: 0; /* remove default padding */
 }
 
-#works .work {
+#works ul .work {
   width: 325px;
   height: 475px;
-  background-color: white;
   border: 1px solid #D0D9D4;
   border-radius: 8px;
 }
