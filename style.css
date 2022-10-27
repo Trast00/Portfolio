@@ -114,3 +114,24 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+#works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#works h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+#works hr {
+  width: 48px;
+  height: 4px;
+  background-color: var(--color-primary-dark);
+  border-radius: 24px;
+}
+
