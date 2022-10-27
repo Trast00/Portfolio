@@ -9,7 +9,7 @@ body {
   --color-primary-light: #f9eaea;
   --color-secondary: #172b4d;
   --color-text: #28352f;
-  --color-border: #e2cfcf
+  --color-border: #e2cfcf;
 }
 
 .tags {
@@ -39,8 +39,9 @@ body {
 }
 
 .buttons:hover {
-  box-shadow: 0px 8px 16px rgba(255, 97, 99, 0.24);
+  box-shadow: 0 8px 16px rgba(255, 97, 99, 0.24);
 }
+
 .buttons:active {
   background: #dd5153;
 }
@@ -205,6 +206,11 @@ p {
   padding: 10px;
 }
 
+#about-me div h2 {
+  text-align: center;
+  margin: 50px 12px 24px 12px;
+}
+
 #works ul .work div h2 {
   font-style: normal;
   font-weight: 600;
@@ -241,14 +247,15 @@ p {
   line-height: 24px;
   background-color: var(--color-primary-dark);
 }
-#aboutme {
+
+#about-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#aboutme .resume {
+#about-me .resume {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,12 +266,7 @@ p {
   margin-bottom: 50px;
 }
 
-#aboutme div h2 {
-  text-align: center;
-  margin: 50px 12px 24px 12px;
-}
-
-#aboutme div p {
+#about-me div p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -273,7 +275,7 @@ p {
   margin: 0 12px 24px 12px;
 }
 
-#aboutme .skills {
+#about-me .skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -281,7 +283,7 @@ p {
   padding: 0;
 }
 
-#aboutme .skills .skill {
+#about-me .skills .skill {
   margin-top: 24px;
   width: 325px;
   height: 375px;
@@ -293,17 +295,17 @@ p {
   background-color: var(--color-primary-light);
 }
 
-#aboutme .skills .skill img {
+#about-me .skills .skill img {
   width: 60px;
   height: 60px;
   padding: 18px;
   margin-top: 40px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
-#aboutme .skills .skill h3 {
+#about-me .skills .skill h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -312,11 +314,11 @@ p {
   margin: 60px 0 0 0;
 }
 
-#aboutme .skills .skill ul {
+#about-me .skills .skill ul {
   justify-content: center;
   padding: 0;
 }
 
-#aboutme .skills .skill li {
+#about-me .skills .skill li {
   background-color: white;
 }
