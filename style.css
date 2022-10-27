@@ -11,6 +11,39 @@ body {
   --color-text: #28352f;
 }
 
+.tags {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  padding: 8px 12px 8px 12px;
+  margin-right: 8px;
+  margin-top: 8px;
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+}
+
+.buttons {
+  width: max-content;
+  margin-top: 12px;
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: var(--color-primary-dark);
+}
+
+.section-title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -181,18 +214,6 @@ p {
   margin-top: 16px;
 }
 
-.tags {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  border-radius: 4px;
-  padding: 8px 12px 8px 12px;
-  margin-right: 8px;
-  margin-top: 8px;
-  color: var(--color-primary-dark);
-  background-color: var(--color-primary-light);
-}
-
 #works ul .work div button {
   width: max-content;
   margin-top: 12px;
@@ -211,6 +232,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background: url("images/illustration-aboutme-mobile.png");
+  background-position: top;
+  background-size: cover;
 }
 
 #aboutme h2 {
@@ -224,26 +249,5 @@ p {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  margin: 0 12px 0 12px;
-}
-
-.buttons {
-  width: max-content;
-  margin-top: 12px;
-  padding: 12px;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  background-color: var(--color-primary-dark);
-}
-
-.section-title{
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  margin: 0 12px 24px 12px;
 }
