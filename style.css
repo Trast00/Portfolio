@@ -84,18 +84,22 @@ header ul {
   justify-content: space-evenly;
 }
 
-header ul li {
-  width: 20px;
-  height: 20px;
-  color: var(--color-text);
-}
-
 header a {
   width: 40px;
   height: 40px;
   text-decoration: none;
   margin-top: 100px;
   color: var(--color-text);
+}
+
+header .social{
+  width: 20px;
+  height: 20px;
+  color: var(--color-text);
+}
+
+header .social:hover {
+  color: var(--color-primary-dark);
 }
 
 .btn-round {
