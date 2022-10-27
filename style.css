@@ -142,6 +142,7 @@ p {
 
 #works ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -156,6 +157,7 @@ p {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 #works ul .work img {
