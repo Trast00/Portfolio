@@ -41,11 +41,11 @@ body {
 .buttons:hover {
   box-shadow: 0px 8px 16px rgba(255, 97, 99, 0.24);
 }
-.buttons:disabled {
+.buttons:active {
   background: #dd5153;
 }
 
-.section-title{
+.section-title {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -312,7 +312,7 @@ p {
   margin: 60px 0 0 0;
 }
 
-#aboutme .skills .skill ul{
+#aboutme .skills .skill ul {
   justify-content: center;
   padding: 0;
 }
