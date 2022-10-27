@@ -64,12 +64,6 @@ p {
   color: var(--color-secondary);
 }
 
-#headline h1 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-}
-
 #headline h1 span {
   color: var(--color-primary-dark);
 }
@@ -122,9 +116,6 @@ p {
 }
 
 #works h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
   text-align: center;
   grid-row: 1 / 2;
   padding: 0;
@@ -190,7 +181,7 @@ p {
   margin-top: 16px;
 }
 
-#works ul .work div .list-languages li {
+.tags {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -223,10 +214,6 @@ p {
 }
 
 #aboutme h2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
   text-align: center;
   margin: 50px 12px 24px 12px;
 }
@@ -252,4 +239,11 @@ p {
   font-size: 17px;
   line-height: 24px;
   background-color: var(--color-primary-dark);
+}
+
+.section-title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
 }
