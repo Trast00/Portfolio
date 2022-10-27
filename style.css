@@ -40,7 +40,7 @@ nav .toggleNav {
   color: var(--color-text);
 }
 
-header {
+#headline {
   margin: 50px 0; /* heigh of nav =48px */
   padding: 0;
   display: flex;
@@ -52,30 +52,30 @@ header {
   background-size: cover;
 }
 
-header h1,
+#headline h1,
 p {
   text-align: center;
   margin: 50px 24px 0 24px;
   color: var(--color-secondary);
 }
 
-header h1 {
+#headline h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
 }
 
-header h1 span {
+#headline h1 span {
   color: var(--color-primary-dark);
 }
 
-header p {
+#headline p {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 }
 
-header ul {
+#headline ul {
   margin: 60px 24px 0 24px;
   padding: 0;
   width: 170px;
@@ -84,7 +84,7 @@ header ul {
   justify-content: space-evenly;
 }
 
-header a {
+#headline a {
   width: 40px;
   height: 40px;
   text-decoration: none;
@@ -92,13 +92,13 @@ header a {
   color: var(--color-text);
 }
 
-header .social{
+#headline .social{
   width: 20px;
   height: 20px;
   color: var(--color-text);
 }
 
-header .social:hover {
+#headline .social:hover {
   color: var(--color-primary-dark);
 }
 
