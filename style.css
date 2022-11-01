@@ -361,6 +361,12 @@ textarea {
   border-radius: 4px;
 }
 
+footer form label input:focus,
+textarea:focus {
+  outline: none !important;
+  border:2px solid var(--color-primary-dark);
+}
+
 footer textarea {
   min-height: 100px;
 }
