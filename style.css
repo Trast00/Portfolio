@@ -2,7 +2,8 @@ body {
   /* remove default margin and padding */
   margin: 0;
   padding: 0;
-  font-family: 'Inter var', sans-serif;
+  font-family: "Inter var", sans-serif;
+  overflow-x: hidden;
 
   --color-primary-dark: #ff6163;
   --color-primary: #ffe7e8;
@@ -89,7 +90,7 @@ header .toggleNav {
 }
 
 #headline {
-  margin: 50px 0; /* heigh of header =48px */
+  margin: 50px 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -126,24 +127,6 @@ p {
   justify-content: space-evenly;
 }
 
-#headline a {
-  width: 40px;
-  height: 40px;
-  text-decoration: none;
-  margin-top: 100px;
-  color: var(--color-text);
-}
-
-#headline .social {
-  width: 20px;
-  height: 20px;
-  color: var(--color-text);
-}
-
-#headline .social:hover {
-  color: var(--color-primary-dark);
-}
-
 .btn-round {
   border: 1px solid #dfe1e6;
   border-radius: 50%;
@@ -152,10 +135,36 @@ p {
   align-items: center;
 }
 
+#headline .btn-round {
+  width: 40px;
+  height: 40px;
+  margin-top: 100px;
+  text-decoration: none;
+}
+
+.social {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  margin-top: 100px;
+  color: var(--color-text);
+}
+
+.social:hover {
+  color: var(--color-primary-dark);
+}
+
 #works {
   display: grid;
   justify-content: center;
   align-items: center;
+}
+
+footer h2 {
+  padding: 0;
+  margin: 24px;
+  text-align: center;
 }
 
 #works h2 {
@@ -181,7 +190,7 @@ p {
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 0; /* remove default padding */
+  padding: 0;
   grid-row: 3 / 4;
 }
 
@@ -323,4 +332,73 @@ p {
 
 #about-me .skills .skill li {
   background-color: white;
+}
+
+footer {
+  background-image: url("images/backgroundfooter.png");
+  background-position: top;
+  background-size: cover;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer form label {
+  margin-top: 24px;
+}
+
+footer form label input,
+textarea {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+footer textarea {
+  min-height: 100px;
+}
+
+footer form label input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 2px solid var(--color-primary-dark);
+}
+
+.btn-contact {
+  margin-top: 24px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  text-decoration: none;
+  padding: 15px 25px 0 10px;
+  align-items: center;
+  color: #505f79;
+  list-style: none;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary-dark);
+}
+
+.my-email {
+  color: #42526e;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 24px 0 147px 0;
 }
