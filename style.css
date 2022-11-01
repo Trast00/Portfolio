@@ -324,3 +324,9 @@ p {
 #about-me .skills .skill li {
   background-color: white;
 }
+
+footer form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
