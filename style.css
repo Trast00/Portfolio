@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter var", sans-serif;
+  overflow-x: hidden;
 
   --color-primary-dark: #ff6163;
   --color-primary: #ffe7e8;
@@ -10,6 +11,7 @@ body {
   --color-secondary: #172b4d;
   --color-text: #28352f;
   --color-border: #e2cfcf;
+
 }
 
 .tags {
@@ -89,7 +91,8 @@ header .toggleNav {
 }
 
 #headline {
-  margin: 50px 0; /* heigh of header =48px */
+  margin: 50px 0;
+  /* heigh of header =48px */
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -134,13 +137,13 @@ p {
   color: var(--color-text);
 }
 
-#headline .social {
+.social {
   width: 20px;
   height: 20px;
   color: var(--color-text);
 }
 
-#headline .social:hover {
+.social:hover {
   color: var(--color-primary-dark);
 }
 
@@ -181,7 +184,8 @@ p {
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 0; /* remove default padding */
+  padding: 0;
+  /* remove default padding */
   grid-row: 3 / 4;
 }
 
@@ -347,4 +351,34 @@ textarea {
   padding: 15px;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
+}
+
+.btn-contact {
+  margin-top: 24px;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-icons a {
+  display: flex;
+
+  padding: 15px 25px 0 10px;
+  align-items: center;
+  color: #505f79;
+  list-style: none;
+}
+
+.my-email {
+  color: #42526E;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 147px;
 }
