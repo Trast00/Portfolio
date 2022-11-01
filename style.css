@@ -361,6 +361,10 @@ textarea {
   border-radius: 4px;
 }
 
+footer textarea {
+  min-height: 100px;
+}
+
 .btn-contact {
   margin-top: 24px;
 }
