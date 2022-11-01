@@ -2,7 +2,7 @@ body {
   /* remove default margin and padding */
   margin: 0;
   padding: 0;
-  font-family: 'Inter var', sans-serif;
+  font-family: "Inter var", sans-serif;
 
   --color-primary-dark: #ff6163;
   --color-primary: #ffe7e8;
@@ -325,8 +325,26 @@ p {
   background-color: white;
 }
 
-footer form{
+footer h2 {
+  padding: 0;
+  margin: 24px;
+  text-align: center;
+}
+
+footer form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer form label {
+  margin-top: 24px;
+}
+
+footer form label input,
+textarea {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
 }
