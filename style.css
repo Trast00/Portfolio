@@ -129,17 +129,19 @@ p {
   justify-content: space-evenly;
 }
 
-#headline a {
+#headline .btn-round {
+  width: 40px;
+  height: 40px;
+  margin-top: 100px;
+  text-decoration: none;
+}
+
+.social {
+  font-size: 20px;
   width: 40px;
   height: 40px;
   text-decoration: none;
   margin-top: 100px;
-  color: var(--color-text);
-}
-
-.social {
-  width: 20px;
-  height: 20px;
   color: var(--color-text);
 }
 
@@ -329,6 +331,12 @@ p {
   background-color: white;
 }
 
+footer {
+  background-image: url("images/backgroundfooter.png");
+  background-position: top;
+  background-size: cover;
+}
+
 footer h2 {
   padding: 0;
   margin: 24px;
@@ -357,28 +365,37 @@ textarea {
   margin-top: 24px;
 }
 
-.social-icons ul {
+.social-icons {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
   align-items: center;
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.social-icons {
+  font-size: 20px;
 }
 
 .social-icons a {
   display: flex;
-
+  text-decoration: none;
   padding: 15px 25px 0 10px;
   align-items: center;
   color: #505f79;
   list-style: none;
 }
 
+.social-icons a:hover {
+  color: var(--color-primary-dark)
+}
+
 .my-email {
-  color: #42526E;
+  color: #42526e;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
   margin-bottom: 147px;
+  margin: 24px 0 147px 0;
 }
