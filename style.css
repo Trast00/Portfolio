@@ -55,6 +55,8 @@ body {
   color: var(--color-secondary);
 }
 
+/* ****Header Section**** */
+
 header {
   position: absolute;
   top: 0;
@@ -93,6 +95,8 @@ header .toggleNav {
   text-decoration: none;
   color: var(--color-text);
 }
+
+/* ****Headline Section**** */
 
 #headline {
   margin: 50px 0;
@@ -163,10 +167,17 @@ p {
   color: var(--color-primary-dark);
 }
 
+/* ****Works Section**** */
 #works {
   display: grid;
   justify-content: center;
+}
+
+#works .work-wrapper {
+  display: grid;
+  justify-content: center;
   align-items: center;
+  grid-template-rows: repeat(3, auto);
 }
 
 footer h2 {
@@ -175,7 +186,7 @@ footer h2 {
   text-align: center;
 }
 
-#works h2 {
+#works .work-wrapper h2 {
   text-align: center;
   font-size: 45px;
   grid-row: 1 / 2;
@@ -183,7 +194,7 @@ footer h2 {
   margin: 0;
 }
 
-#works hr {
+#works .work-wrapper hr {
   width: 48px;
   height: 4px;
   margin-top: 10px;
@@ -192,9 +203,8 @@ footer h2 {
   grid-row: 2 / 3;
 }
 
-#works ul {
-  display: flex;
-  flex-direction: column;
+#works .work-wrapper .list-work {
+  display: grid;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -202,7 +212,7 @@ footer h2 {
   grid-row: 3 / 4;
 }
 
-#works ul .work {
+#works .work-wrapper .list-work .work {
   width: 330px;
   height: 500px;
   border: 1px solid var(--color-border);
@@ -212,13 +222,13 @@ footer h2 {
   margin-top: 24px;
 }
 
-#works ul .work img {
+#works .work-wrapper .list-work .work img {
   width: 100%;
   height: 275px;
   background-color: var(--color-primary-light);
 }
 
-#works ul .work div {
+#works .work-wrapper .list-work .work div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,7 +240,7 @@ footer h2 {
   margin: 50px 12px 24px 12px;
 }
 
-#works ul .work div h2 {
+#works .work-wrapper .list-work .work div h2 {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -247,13 +257,15 @@ footer h2 {
   margin-top: 16px;
 }
 
-#works ul .work ul {
+#works .list-work .work .list-tag {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding: 0;
 }
 
-#works ul .work div button {
+#works .list-work .work div button {
   width: max-content;
   margin-top: 24px;
   padding: 12px;
@@ -485,5 +497,17 @@ textarea:focus {
   }
 
   /* ****Work Section**** */
+
+  #works .work-wrapper {
+    width: 1150px;
+  }
+
+  #works .work-wrapper .list-work {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+  }
 
 }
