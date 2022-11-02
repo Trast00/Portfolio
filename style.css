@@ -569,6 +569,10 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url("images/illustration-2-contact-form-desktop@2x.png");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
   }
 
   footer .footer-wrapper{
