@@ -150,7 +150,7 @@ p {
 #headline .btn-round {
   width: 40px;
   height: 40px;
-  margin-top: 40px;
+  margin-top: 60px;
   text-decoration: none;
 }
 
@@ -210,6 +210,7 @@ footer h2 {
   list-style: none;
   padding: 0;
   grid-row: 3 / 4;
+  row-gap: 24px;
 }
 
 #works .work-wrapper .list-work .work {
@@ -219,7 +220,6 @@ footer h2 {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
 }
 
 #works .work-wrapper .list-work .work img {
@@ -460,7 +460,7 @@ textarea:focus {
   }
   
   #headline {
-    height: 800px;
+    height: 1000px;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -500,6 +500,7 @@ textarea:focus {
 
   #works .work-wrapper {
     width: 1150px;
+    margin-top: 80px;
   }
 
   #works .work-wrapper .list-work {
@@ -507,7 +508,14 @@ textarea:focus {
     justify-content: center;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
+    column-gap: 24px;
+    row-gap: 24px;
   }
+
+  #works .work-wrapper .list-work .work {
+    width: 369px;
+    height: 500px;
+  }
+  
 
 }
