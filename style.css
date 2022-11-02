@@ -79,7 +79,7 @@ header h1 a {
   color: var(--color-text);
 }
 
-header nav ul{
+header nav ul {
   display: none;
   padding: 0;
   margin: 0;
@@ -186,6 +186,11 @@ footer h2 {
   text-align: center;
 }
 
+#about-me div h2 {
+  text-align: center;
+  margin: 50px 12px 24px 12px;
+}
+
 #works .work-wrapper h2 {
   text-align: center;
   font-size: 45px;
@@ -234,11 +239,6 @@ footer h2 {
   flex-direction: column;
   align-items: center;
   padding: 10px;
-}
-
-#about-me div h2 {
-  text-align: center;
-  margin: 50px 12px 24px 12px;
 }
 
 #works .work-wrapper .list-work .work div h2 {
@@ -389,14 +389,14 @@ textarea {
   border-radius: 4px;
 }
 
-footer .footer-wrapper textarea {
-  min-height: 100px;
-}
-
 footer .footer-wrapper form label input:focus,
 textarea:focus {
   outline: none !important;
   border: 2px solid var(--color-primary-dark);
+}
+
+footer .footer-wrapper textarea {
+  min-height: 100px;
 }
 
 .btn-contact {
@@ -434,12 +434,13 @@ textarea:focus {
   margin: 24px 0 147px 0;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   header h1 {
     padding: 0;
   }
+
   header .toggleNav,
-  h1 a{
+  h1 a {
     display: none;
   }
 
@@ -452,7 +453,7 @@ textarea:focus {
     font-size: 15px;
     line-height: 20px;
   }
-  
+
   header nav ul {
     width: 255px;
     height: 40px;
@@ -466,13 +467,13 @@ textarea:focus {
     cursor: pointer;
   }
 
-  header nav ul li:hover{
+  header nav ul li:hover {
     text-decoration: underline;
   }
-  
+
   #headline {
     height: 1000px;
-    margin: 0px;
+    margin: 0;
     display: flex;
     justify-content: center;
     background-image: url("images/Header-llustration-desktop@2x.png");
@@ -492,7 +493,7 @@ textarea:focus {
     font-size: 40px;
     line-height: 60px;
     letter-spacing: 0.37px;
-    margin: 0px;
+    margin: 0;
   }
 
   #headline .headline-wrapper p {
@@ -528,6 +529,12 @@ textarea:focus {
     width: 369px;
     height: 475px;
   }
+  
+  footer .footer-wrapper h2 {
+    width: 450px;
+    font-size: 30px;
+    margin-right: 24px;
+  }
 
   #works .work-wrapper .list-work .work h2 {
     padding-left: 16px;
@@ -546,7 +553,7 @@ textarea:focus {
     background-repeat: no-repeat;
   }
 
-  #about-me .about-me-wrapper{
+  #about-me .about-me-wrapper {
     width: 80vw;
   }
 
@@ -557,7 +564,7 @@ textarea:focus {
     padding-right: 120px;
   }
 
-  #about-me .about-me-wrapper .list-skill{
+  #about-me .about-me-wrapper .list-skill {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -575,18 +582,12 @@ textarea:focus {
     background-repeat: no-repeat;
   }
 
-  footer .footer-wrapper{
+  footer .footer-wrapper {
     width: 80vw;
     min-height: 500px;
     display: flex;
     flex-direction: row;
     margin-top: 80px;
-  }
-
-  footer .footer-wrapper h2{
-    width: 450px;
-    font-size: 30px;
-    margin-right: 24px;
   }
 
   footer .footer-wrapper form {
@@ -607,13 +608,12 @@ textarea:focus {
     margin-top: 145px;
   }
 
-  footer .my-email{
+  footer .my-email {
     display: none;
   }
-
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   #works .work-wrapper .list-work {
     display: grid;
     justify-content: center;
@@ -623,4 +623,3 @@ textarea:focus {
     row-gap: 24px;
   }
 }
-
