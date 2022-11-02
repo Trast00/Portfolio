@@ -403,9 +403,36 @@ textarea:focus {
 }
 
 @media screen and (min-width:768px) {
-  header {
-    
+  header h1 {
+    padding: 0;
   }
+  header .toggleNav,
+  h1 a{
+    display: none;
+  }
+
+  header nav {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  header nav ul {
+    width: 255px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: #344563;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
   #headline {
     height: 1000px;
     margin: 0px;
