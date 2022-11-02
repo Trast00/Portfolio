@@ -62,7 +62,6 @@ header {
   height: 48px;
   display: flex;
   justify-content: space-between;
-  background-color: white;
   color: var(--color-text);
 }
 
@@ -401,4 +400,15 @@ textarea:focus {
   font-weight: 400;
   line-height: 32px;
   margin: 24px 0 147px 0;
+}
+
+@media screen and (min-width:768px) {
+  header {
+    
+  }
+  #headline {
+    height: 1000px;
+    margin: 0px;
+    background-image: url("images/Header-llustration-desktop@2x.png");
+  }
 }
