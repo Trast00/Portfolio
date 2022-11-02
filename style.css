@@ -279,25 +279,32 @@ footer h2 {
   background-color: var(--color-primary-dark);
 }
 
+/* ****About me**** */
+
 #about-me {
+  display: flex;
+  justify-content: center;
+}
+
+#about-me .about-me-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#about-me .resume {
+#about-me .about-me-wrapper .resume {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
   background: url("images/illustration-aboutme-mobile.png");
   background-position: top;
   background-size: cover;
-  margin-bottom: 50px;
 }
 
-#about-me div p {
+#about-me .about-me-wrapper div p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -306,7 +313,7 @@ footer h2 {
   margin: 0 12px 24px 12px;
 }
 
-#about-me .skills {
+#about-me .about-me-wrapper .list-skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -314,7 +321,7 @@ footer h2 {
   padding: 0;
 }
 
-#about-me .skills .skill {
+#about-me .about-me-wrapper .list-skill .skill {
   margin-top: 24px;
   width: 325px;
   height: 375px;
@@ -326,7 +333,7 @@ footer h2 {
   background-color: var(--color-primary-light);
 }
 
-#about-me .skills .skill img {
+#about-me .about-me-wrapper .list-skill .skill img {
   width: 60px;
   height: 60px;
   padding: 18px;
@@ -336,7 +343,7 @@ footer h2 {
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
-#about-me .skills .skill h3 {
+#about-me .about-me-wrapper .list-skill .skill h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -345,12 +352,12 @@ footer h2 {
   margin: 60px 0 0 0;
 }
 
-#about-me .skills .skill ul {
+#about-me .about-me-wrapper .list-skill .skill ul {
   justify-content: center;
   padding: 0;
 }
 
-#about-me .skills .skill li {
+#about-me .about-me-wrapper .list-skill .skill li {
   background-color: white;
 }
 
@@ -516,6 +523,34 @@ textarea:focus {
     width: 369px;
     height: 500px;
   }
-  
+
+  /* ****About me**** */
+
+  #about-me {
+    width: 100%;
+    min-height: 350px;
+    align-items: flex-end;
+    background: url("images/illustration-about-me-desktop@2x.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #about-me .about-me-wrapper{
+    width: 80vw;
+  }
+
+  #about-me .about-me-wrapper .resume {
+    background: none;
+    margin-top: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  #about-me .about-me-wrapper .list-skill{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
 }
