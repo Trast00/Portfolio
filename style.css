@@ -77,6 +77,12 @@ header h1 a {
   color: var(--color-text);
 }
 
+header nav ul{
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
 header .toggleNav {
   width: 40px;
   height: 40px;
@@ -431,11 +437,48 @@ textarea:focus {
     padding: 0;
     margin-top: 16px;
     margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  header nav ul li:hover{
+    text-decoration: underline;
   }
   
   #headline {
-    height: 1000px;
+    height: 800px;
     margin: 0px;
+    display: flex;
+    justify-content: center;
     background-image: url("images/Header-llustration-desktop@2x.png");
   }
+
+  #headline .headline-wrapper {
+    width: 920px;
+    height: 756px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 72px;
+  }
+
+  #headline .headline-wrapper h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  #headline .headline-wrapper p {
+    margin: 10px 150px 24px 150px;
+    line-height: 28px;
+  }
+
+  #headline .headline-wrapper ul {
+    margin: 24px 0 24px 0;
+  }
+
+  #headline .headline-wrapper .btn-round {
+    margin-top: 24px;
+  }
+
 }
