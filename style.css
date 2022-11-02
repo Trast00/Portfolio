@@ -199,6 +199,7 @@ footer h2 {
   height: 4px;
   margin-top: 10px;
   background-color: var(--color-primary-dark);
+  border: none;
   border-radius: 24px;
   grid-row: 2 / 3;
 }
@@ -323,6 +324,7 @@ footer h2 {
 
 #about-me .about-me-wrapper .list-skill .skill {
   margin-top: 24px;
+  margin-right: 24px;
   width: 325px;
   height: 375px;
   border: 1px solid var(--color-border);
@@ -517,7 +519,7 @@ textarea:focus {
     display: grid;
     justify-content: center;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 24px;
     row-gap: 24px;
   }
@@ -556,9 +558,9 @@ textarea:focus {
   }
 
   #about-me .about-me-wrapper .list-skill{
-    width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   /* ****Footer Section**** */
@@ -606,3 +608,15 @@ textarea:focus {
   }
 
 }
+
+@media screen and (min-width:1200px) {
+  #works .work-wrapper .list-work {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+}
+
