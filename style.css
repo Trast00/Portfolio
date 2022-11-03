@@ -530,6 +530,14 @@ footer .contact-wrapper textarea {
     margin-top: 80px;
   }
 
+  #works .work-wrapper h2 {
+    margin-bottom: 24px;
+  }
+
+  #works .work-wrapper hr {
+    display: none;
+  }
+
   #works .work-wrapper .list-work {
     display: grid;
     justify-content: center;
@@ -554,6 +562,7 @@ footer .contact-wrapper textarea {
   #works .work-wrapper .list-work .work h2 {
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0;
   }
 
   /* ****About me**** */
