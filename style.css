@@ -530,6 +530,13 @@ footer .contact-wrapper textarea {
     margin-top: 80px;
   }
 
+  footer .contact-wrapper h2 {
+    width: 465px;
+    font-size: 30px;
+    margin-right: 24px;
+    text-align: start;
+  }
+
   #works .work-wrapper h2 {
     margin-bottom: 24px;
   }
@@ -550,13 +557,6 @@ footer .contact-wrapper textarea {
   #works .work-wrapper .list-work .work {
     width: 369px;
     height: 475px;
-  }
-
-  footer .contact-wrapper h2 {
-    width: 465px;
-    font-size: 30px;
-    margin-right: 24px;
-    text-align: start;
   }
 
   #works .work-wrapper .list-work .work h2 {
