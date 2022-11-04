@@ -624,6 +624,13 @@ footer .contact-wrapper textarea {
 
   #about-me .about-me-wrapper .list-skill .skill {
     margin-right: 24px;
+    transition: all 0.3s;
+  }
+
+  #about-me .about-me-wrapper .list-skill .skill:hover {
+    transform: translateY(-15px);
+    border: 1px solid var(--color-primary-dark);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
   }
 
   /* ****Footer Section**** */
