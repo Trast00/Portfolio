@@ -582,9 +582,7 @@ footer .contact-wrapper textarea {
 
   .work img:hover {
     transform: scale(1.08);
-
   }
-
 
   #works .work-wrapper .list-work .work:hover {
     transform: translateY(-15px);
