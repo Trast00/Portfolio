@@ -531,6 +531,11 @@ footer .contact-wrapper textarea {
 
   #headline .headline-wrapper .btn-round {
     margin-top: 24px;
+    transition: all 0.3s;
+  }
+
+  #headline .headline-wrapper .btn-round:hover {
+    transform: scale(1.3);
   }
 
   /* ****Work Section**** */
