@@ -430,6 +430,7 @@ footer .contact-wrapper textarea {
   margin-top: 50px;
   font-size: 20px;
 }
+
 .social-icon {
   transition: all 0.3s;
   font-size: 24px;
@@ -567,7 +568,18 @@ footer .contact-wrapper textarea {
     width: 369px;
     height: 475px;
     transition: all 0.4s;
+    overflow: hidden;
   }
+
+  .work img {
+    transition: all 0.4s ease-in-out;
+  }
+
+  .work img:hover {
+    transform: scale(1.08);
+
+  }
+
 
   #works .work-wrapper .list-work .work:hover {
     transform: translateY(-15px);
