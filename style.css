@@ -15,8 +15,8 @@ body {
 
 .tags {
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   border-radius: 4px;
   padding: 8px 12px 8px 12px;
   margin-right: 8px;
@@ -34,8 +34,8 @@ body {
   border-radius: 4px;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
   background-color: var(--color-primary-dark);
 }
 
@@ -50,8 +50,8 @@ body {
 .section-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
   color: var(--color-secondary);
 }
 
@@ -83,6 +83,11 @@ header nav ul {
   display: none;
   padding: 0;
   margin: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--color-secondary);
 }
 
 header .toggleNav {
@@ -126,8 +131,8 @@ p {
 
 #headline p {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 #headline ul {
@@ -155,7 +160,7 @@ p {
 }
 
 .social {
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 40px;
   height: 40px;
   text-decoration: none;
@@ -182,7 +187,7 @@ p {
   grid-template-rows: repeat(3, auto);
 }
 
-footer .contact-wrapper h2 {
+footer .contact-wrapper h3 {
   padding: 0;
   margin: 24px;
   text-align: center;
@@ -195,7 +200,7 @@ footer .contact-wrapper h2 {
 
 #works .work-wrapper h2 {
   text-align: center;
-  font-size: 45px;
+  font-size: 2.813rem;
   grid-row: 1 / 2;
   padding: 0;
   margin: 0;
@@ -248,8 +253,8 @@ footer .contact-wrapper h2 {
 #works .work-wrapper .list-work .work div h2 {
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   margin-top: 6px;
 }
 
@@ -279,8 +284,8 @@ footer .contact-wrapper h2 {
   border-radius: 4px;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
   background-color: var(--color-primary-dark);
 }
 
@@ -312,8 +317,8 @@ footer .contact-wrapper h2 {
 #about-me .about-me-wrapper div p {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2rem;
   text-align: center;
   margin: 0 12px 24px 12px;
 }
@@ -352,8 +357,8 @@ footer .contact-wrapper h2 {
 #about-me .about-me-wrapper .list-skill .skill h3 {
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: #633434;
   margin: 60px 0 0 0;
 }
@@ -428,12 +433,12 @@ footer .contact-wrapper textarea {
   list-style: none;
   padding: 0;
   margin-top: 50px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .social-icon {
   transition: all 0.3s;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .social-icons a {
@@ -452,9 +457,9 @@ footer .contact-wrapper textarea {
 
 .my-email {
   color: #42526e;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 2rem;
   margin: 24px 0 147px 0;
 }
 
@@ -474,8 +479,8 @@ footer .contact-wrapper textarea {
     display: flex;
     justify-content: center;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.938rem;
+    line-height: 1.25rem;
   }
 
   header nav ul {
@@ -488,6 +493,10 @@ footer .contact-wrapper textarea {
     padding: 0;
     margin-top: 16px;
     margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  header nav ul li {
     cursor: pointer;
   }
 
@@ -514,15 +523,15 @@ footer .contact-wrapper textarea {
 
   #headline .headline-wrapper h1 {
     font-weight: 800;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 2.5rem;
+    line-height: 3.75rem;
     letter-spacing: 0.37px;
     margin: 0;
   }
 
   #headline .headline-wrapper p {
     margin: 10px 150px 24px 150px;
-    line-height: 28px;
+    line-height: 1.75rem;
   }
 
   #headline .headline-wrapper ul {
@@ -545,9 +554,9 @@ footer .contact-wrapper textarea {
     margin-top: 80px;
   }
 
-  footer .contact-wrapper h2 {
+  footer .contact-wrapper h3 {
     width: 465px;
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-right: 24px;
     text-align: start;
   }
