@@ -84,10 +84,12 @@ header nav ul {
   padding: 0;
   margin: 0;
 }
+
 header nav ul li a {
   text-decoration: none;
   color: var(--color-secondary);
 }
+
 header .toggleNav {
   width: 40px;
   height: 40px;
@@ -493,9 +495,11 @@ footer .contact-wrapper textarea {
     margin-bottom: 16px;
     cursor: pointer;
   }
-    header nav ul li {
-      cursor: pointer;
-    }
+
+  header nav ul li {
+    cursor: pointer;
+  }
+
   header nav ul li:hover {
     text-decoration: underline;
   }
