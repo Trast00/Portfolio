@@ -182,7 +182,7 @@ p {
   grid-template-rows: repeat(3, auto);
 }
 
-footer .contact-wrapper h2 {
+footer .contact-wrapper h3 {
   padding: 0;
   margin: 24px;
   text-align: center;
@@ -545,7 +545,7 @@ footer .contact-wrapper textarea {
     margin-top: 80px;
   }
 
-  footer .contact-wrapper h2 {
+  footer .contact-wrapper h3 {
     width: 465px;
     font-size: 30px;
     margin-right: 24px;
