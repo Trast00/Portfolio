@@ -99,8 +99,8 @@ header #mobile-nav {
   right: -100vw;
   transition: 0.7s;
   border-bottom-left-radius: 30px;
-  border-bottom-right-radius:30px;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 header #mobile-nav ul {
@@ -108,6 +108,7 @@ header #mobile-nav ul {
   height: 90vh;
   list-style: none;
 }
+
 header #mobile-nav ul li {
   display: flex;
   width: 100%;
@@ -115,7 +116,7 @@ header #mobile-nav ul li {
 
 header #mobile-nav ul li a {
   text-decoration: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -175,15 +176,6 @@ p {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-#headline ul {
-  margin: 40px 24px 0 0;
-  padding: 0;
-  width: 170px;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .btn-round {
@@ -483,15 +475,6 @@ footer .contact-wrapper textarea {
   font-size: 1.5rem;
 }
 
-.social-icons a {
-  display: flex;
-  text-decoration: none;
-  padding: 15px 25px 0 10px;
-  align-items: center;
-  color: #505f79;
-  list-style: none;
-}
-
 .social-icon:hover {
   color: var(--color-primary-dark);
   transform: scale(1.3);
@@ -513,6 +496,24 @@ footer .contact-wrapper textarea {
   header .toggleNav,
   h1 a {
     display: none;
+  }
+
+  .social-icons a {
+    display: flex;
+    text-decoration: none;
+    padding: 15px 25px 0 10px;
+    align-items: center;
+    color: #505f79;
+    list-style: none;
+  }
+
+  #headline ul {
+    margin: 40px 24px 0 0;
+    padding: 0;
+    width: 170px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   header #desktop-nav {

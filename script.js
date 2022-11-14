@@ -9,6 +9,10 @@ closeMenu.addEventListener('click',function() {
   menu.style.right = "-100vw"
 });
 
+document.getElementById("works-mobile-menu-item").addEventListener('click', function() {closeMenu.click()})
+document.getElementById("about-me-mobile-menu-item").addEventListener('click', function() {closeMenu.click()})
+document.getElementById("footer-mobile-menu-item").addEventListener('click', function() {closeMenu.click()})
+
 /* highlight displayed section */
 var workSection = document.getElementById("works")
 var aboutMeSection = document.getElementById("about-me")
