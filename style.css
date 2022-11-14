@@ -178,6 +178,15 @@ p {
   line-height: 1.75rem;
 }
 
+#headline ul {
+  margin: 40px 24px 0 0;
+  padding: 0;
+  width: 170px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .btn-round {
   border: 1px solid #dfe1e6;
   border-radius: 50%;
@@ -488,6 +497,8 @@ footer .contact-wrapper textarea {
   margin: 24px 0 147px 0;
 }
 
+
+
 @media screen and (min-width: 768px) {
   header h1 {
     padding: 0;
@@ -507,14 +518,7 @@ footer .contact-wrapper textarea {
     list-style: none;
   }
 
-  #headline ul {
-    margin: 40px 24px 0 0;
-    padding: 0;
-    width: 170px;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-  }
+  
 
   header #desktop-nav {
     width: 100%;
