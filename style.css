@@ -80,6 +80,15 @@ header h1 a {
   color: var(--color-secondary);
 }
 
+#headline ul {
+  margin: 40px 24px 0 0;
+  padding: 0;
+  width: 170px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 header #desktop-nav ul {
   display: none;
   padding: 0;
@@ -176,15 +185,6 @@ p {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-#headline ul {
-  margin: 40px 24px 0 0;
-  padding: 0;
-  width: 170px;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .btn-round {
@@ -497,8 +497,6 @@ footer .contact-wrapper textarea {
   margin: 24px 0 147px 0;
 }
 
-
-
 @media screen and (min-width: 768px) {
   header h1 {
     padding: 0;
@@ -518,7 +516,7 @@ footer .contact-wrapper textarea {
     list-style: none;
   }
 
-  
+
 
   header #desktop-nav {
     width: 100%;
