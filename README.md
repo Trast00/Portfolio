@@ -18,6 +18,14 @@ This is my personnal portfolio of Microverse Full time program. The goal is to w
 - Twitter: [@twitterhandle](https://twitter.com/AllassaneDicko0/)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/allassane-dicko-744aaa224)
 
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+

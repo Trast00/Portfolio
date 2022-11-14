@@ -4,3 +4,4 @@ package.json
 .stylelintrc.json
 .hintrc
 hint-report/
+.eslintrc.json
