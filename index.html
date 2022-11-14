@@ -13,14 +13,23 @@
   <body>
     <header>
       <h1><a href="#">Welcome</a></h1>
-      <nav>
+      <nav id="desktop-nav">
         <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#works">Portfolio</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
       </nav>
-      <a class="toggleNav" href="#"><i class="fa-solid fa-bars"></i></a>
+      <div id="open-menu" class="toggleNav" href="#"><i class="fa-solid fa-bars"></i></div>
+
+      <nav id="mobile-nav">
+        <div id="close-menu" class="toggleNav" href="#"><i class="fa-solid fa-xmark"></i></div>
+        <ul>
+          <li><a href="#works">Portfolio</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section id="headline">
