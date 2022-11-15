@@ -10,86 +10,85 @@ function highlightMenuItem(menuItemID, highlighted) {
 }
 
 function showProjectDetail(project) {
-  console.log("show:", project)
-  var container = document.createElement('div')
-  container.id = "project-detail-modal"
-  container.classList.add('work-detail-wrapper')
+  const container = document.createElement('div');
+  container.id = 'project-detail-modal';
+  container.classList.add('work-detail-wrapper');
 
-  var wrapper = document.createElement('div')
-  wrapper.classList.add('work-detail')
+  const wrapper = document.createElement('div');
+  wrapper.classList.add('work-detail');
 
-  //add icons-close  element
-  var btnClose = document.createElement('div')
-  btnClose.id = "btn-close-detail"
-  btnClose.classList.add('close-icon')
-  var icon = document.createElement('i')
-  icon.classList.add('fa-solid', 'fa-xmark')
-  btnClose.append(icon)
-  btnClose.addEventListener('click', function() {
-    document.getElementById("project-detail-modal").remove()
-  })
-  var row = document.createElement('div')
-  row.classList.add('row')
-  row.append(btnClose)
-  wrapper.append(row)
+  // add icons-close  element
+  const btnClose = document.createElement('div');
+  btnClose.id = 'btn-close-detail';
+  btnClose.classList.add('close-icon');
+  const icon = document.createElement('i');
+  icon.classList.add('fa-solid', 'fa-xmark');
+  btnClose.append(icon);
+  btnClose.addEventListener('click', () => {
+    document.getElementById('project-detail-modal').remove();
+  });
+  const row = document.createElement('div');
+  row.classList.add('row');
+  row.append(btnClose);
+  wrapper.append(row);
 
-  //add img
-  var img = document.createElement('img')
-  img.src = project.image
-  img.alt = "Project Image"
-  wrapper.append(img)
-  //add title
-  var title = document.createElement('h2')
-  title.textContent = project.name
-  wrapper.append(title)
+  // add img
+  const img = document.createElement('img');
+  img.src = project.image;
+  img.alt = 'Project Image';
+  wrapper.append(img);
+  // add title
+  const title = document.createElement('h2');
+  title.textContent = project.name;
+  wrapper.append(title);
 
-  //add list-tag
-  var listTag = document.createElement('ul')
-  listTag.classList.add('list-tag')
-  for (var i=0; i<project.technologies.length; i++){
-    var tag = document.createElement("li")
-    tag.classList.add("tags")
-    tag.textContent = project.technologies[i]
-    listTag.append(tag)
+  // add list-tag
+  const listTag = document.createElement('ul');
+  listTag.classList.add('list-tag');
+  for (let i = 0; i < project.technologies.length; i + 1) {
+    const tag = document.createElement('li');
+    tag.classList.add('tags');
+    tag.textContent = project.technologies[i];
+    listTag.append(tag);
   }
-  wrapper.append(listTag)
+  wrapper.append(listTag);
 
-  //add description
-  var description = document.createElement('p')
-  description.id = "work-detail-description"
-  description.textContent = project.description
-  wrapper.append(description)
+  // add description
+  const description = document.createElement('p');
+  description.id = 'work-detail-description';
+  description.textContent = project.description;
+  wrapper.append(description);
 
-  //add buttons
-  var btnGroupe = document.createElement('div')
-  btnGroupe.classList.add('btn-group')
+  // add buttons
+  const btnGroupe = document.createElement('div');
+  btnGroupe.classList.add('btn-group');
 
-  var btnLive = document.createElement('button')
-  var btnSource = document.createElement('button')
-  btnLive.classList.add('buttons')
-  btnSource.classList.add('buttons')
+  const btnLive = document.createElement('button');
+  const btnSource = document.createElement('button');
+  btnLive.classList.add('buttons');
+  btnSource.classList.add('buttons');
 
-  var btnLiveText = document.createElement('p')
-  btnLiveText.textContent = "See Live"
-  btnLive.append(btnLiveText)
-  var btnIcon = document.createElement('img')
-  btnIcon.src = "images/iconsLive.png"
-  btnLive.append(btnIcon)
+  const btnLiveText = document.createElement('p');
+  btnLiveText.textContent = 'See Live';
+  btnLive.append(btnLiveText);
+  let btnIcon = document.createElement('img');
+  btnIcon.src = 'images/iconsLive.png';
+  btnLive.append(btnIcon);
 
-  var btnSourceText = document.createElement('p')
-  btnSourceText.textContent = "See Source"
-  btnIcon = document.createElement('i')
-  btnIcon.classList.add('fa-brands', 'fa-github')
-  btnSource.append(btnSourceText)
-  btnSource.append(btnIcon)
+  const btnSourceText = document.createElement('p');
+  btnSourceText.textContent = 'See Source';
+  btnIcon = document.createElement('i');
+  btnIcon.classList.add('fa-brands', 'fa-github');
+  btnSource.append(btnSourceText);
+  btnSource.append(btnIcon);
 
-  btnGroupe.append(btnLive)
-  btnGroupe.append(btnSource)
-  wrapper.append(btnGroupe)
+  btnGroupe.append(btnLive);
+  btnGroupe.append(btnSource);
+  wrapper.append(btnGroupe);
 
-  container.append(wrapper)
-  //show wrapper on body
-  document.body.append(container)
+  container.append(wrapper);
+  // show wrapper on body
+  document.body.append(container);
 }
 
 /* toggle Menu button Event */
@@ -122,54 +121,66 @@ footerSection.addEventListener('mouseout', () => { highlightMenuItem('footer-des
 
 /* Work Detail */
 /*
--list of work 
+-list of work
 -list of work create the work sections
 -click event open or close work detail
 */
-defaultDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
-var listProject = [
-  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project1.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project2.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project3.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project4.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project5.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project6.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } }
-]
+const defaultDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+const listProject = [
+  {
+    name: 'Multi-Post Stories Gain+Glory', description: defaultDescription, image: 'images/Project1.png', technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'], link: { live: '', source: '' },
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory', description: defaultDescription, image: 'images/Project2.png', technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'], link: { live: '', source: '' },
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory', description: defaultDescription, image: 'images/Project3.png', technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'], link: { live: '', source: '' },
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory', description: defaultDescription, image: 'images/Project4.png', technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'], link: { live: '', source: '' },
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory', description: defaultDescription, image: 'images/Project5.png', technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'], link: { live: '', source: '' },
+  },
+  {
+    name: 'Multi-Post Stories Gain+Glory', description: defaultDescription, image: 'images/Project6.png', technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'], link: { live: '', source: '' },
+  },
+];
 /* Create list of project dynamically */
-var listWork = document.getElementById("list-work")
-listProject.forEach(project => {
-  let work = document.createElement('li')
-  let img = document.createElement('img')
-  let detailContainer = document.createElement('div')
-  let title = document.createElement('h2')
-  let listTag = document.createElement('ul')
-  var btnShowDetail = document.createElement('button')
+const listWork = document.getElementById('list-work');
+listProject.forEach((project) => {
+  const work = document.createElement('li');
+  const img = document.createElement('img');
+  const detailContainer = document.createElement('div');
+  const title = document.createElement('h2');
+  const listTag = document.createElement('ul');
+  const btnShowDetail = document.createElement('button');
   /* Add Containt */
-  work.classList.add('work')
-  img.src = project.image
-  img.alt = "Project image"
+  work.classList.add('work');
+  img.src = project.image;
+  img.alt = 'Project image';
 
-  title.classList.add('section-title')
-  title.innerHTML = project.name
+  title.classList.add('section-title');
+  title.innerHTML = project.name;
 
-  listTag.classList.add('list-tag')
-  for (var j=0; j<project.technologies.length; j++){
-    var tag = document.createElement("li")
-    tag.classList.add("tags")
-    tag.textContent = project.technologies[j]
-    listTag.append(tag)
+  listTag.classList.add('list-tag');
+  for (let j = 0; j < project.technologies.length; j + 1) {
+    const tag = document.createElement('li');
+    tag.classList.add('tags');
+    tag.textContent = project.technologies[j];
+    listTag.append(tag);
   }
 
-  btnShowDetail.classList.add('buttons')
-  btnShowDetail.textContent = 'See Project'
+  btnShowDetail.classList.add('buttons');
+  btnShowDetail.textContent = 'See Project';
 
-  btnShowDetail.addEventListener('click', function() {showProjectDetail(project)})
+  btnShowDetail.addEventListener('click', () => { showProjectDetail(project); });
 
-  work.append(img)
-  detailContainer.append(title)
-  detailContainer.append(listTag)
-  detailContainer.append(btnShowDetail)
-  work.append(detailContainer)
+  work.append(img);
+  detailContainer.append(title);
+  detailContainer.append(listTag);
+  detailContainer.append(btnShowDetail);
+  work.append(detailContainer);
 
-  listWork.append(work)
-})
+  listWork.append(work);
+});

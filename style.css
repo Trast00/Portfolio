@@ -181,6 +181,27 @@ p {
   color: var(--color-primary-dark);
 }
 
+.work-detail-wrapper .work-detail .buttons {
+  width: 160px;
+  height: 48px;
+  padding: 12px 16px;
+  display: inline-flex;
+  margin-top: 5px;
+  margin-right: 12px;
+}
+
+.work-detail-wrapper .work-detail .buttons p {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
 #headline p {
   font-weight: 400;
   font-size: 1.25rem;
@@ -236,6 +257,15 @@ footer .contact-wrapper h3 {
   text-align: center;
 }
 
+.work-detail-wrapper .work-detail h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0;
+  order: 3;
+}
+
 #about-me div h2 {
   text-align: center;
   margin: 50px 12px 24px 12px;
@@ -278,6 +308,18 @@ footer .contact-wrapper h3 {
   flex-direction: column;
 }
 
+.work-detail-wrapper .work-detail img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 8px;
+  order: 1;
+}
+
+.work-detail-wrapper .work-detail .buttons img {
+  width: 24px;
+  height: 24px;
+}
+
 #works .work-wrapper .list-work .work img {
   width: 100%;
   height: 275px;
@@ -308,6 +350,15 @@ footer .contact-wrapper h3 {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 16px;
+}
+
+.work-detail-wrapper .work-detail .list-tag {
+  width: 100%;
+  height: 32px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  order: 4;
 }
 
 #works .list-work .work .list-tag {
@@ -358,7 +409,6 @@ footer .contact-wrapper h3 {
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-
 }
 
 .work-detail-wrapper .work-detail .row {
@@ -372,32 +422,8 @@ footer .contact-wrapper h3 {
   order: 6;
 }
 
-.work-detail-wrapper .work-detail img {
-  width: 100%;
-  max-height: 250px;
-  border-radius: 8px;
-  order: 1;
-}
-
-.work-detail-wrapper .work-detail h2 {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 40px;
-  margin: 0;
-  order: 3;
-}
-
-.work-detail-wrapper .work-detail .list-tag {
-  width: 100%;
-  height: 32px;
-  padding: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  order: 4;
-}
-
 #work-detail-description {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -409,32 +435,6 @@ footer .contact-wrapper h3 {
   max-height: 32vh;
   overflow: hidden;
   order: 5;
-}
-
-.work-detail-wrapper .work-detail .buttons {
-  width: 160px;
-  height: 48px;
-  padding: 12px 16px;
-  display: inline-flex;
-  margin-top: 5px;
-  margin-right: 12px;
-}
-
-.work-detail-wrapper .work-detail .buttons p {
-  width: 100px;
-  padding: 0;
-  margin: 0;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  }
-
-.work-detail-wrapper .work-detail .buttons img {
-  width: 24px;
-  height: 24px;
 }
 
 .work-detail-wrapper .work-detail .buttons i {
@@ -722,6 +722,11 @@ footer .contact-wrapper textarea {
     text-align: start;
   }
 
+  .work-detail-wrapper .work-detail h2 {
+    width: 60%;
+    height: 60px;
+  }
+
   #works .work-wrapper h2 {
     margin-bottom: 24px;
   }
@@ -776,7 +781,7 @@ footer .contact-wrapper textarea {
     flex-wrap: wrap;
     border: 1px solid #ebecf0;
     border-radius: 8px;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   }
 
   .work-detail-wrapper .work-detail .row {
@@ -803,16 +808,10 @@ footer .contact-wrapper textarea {
     max-height: 320px;
   }
 
-  .work-detail-wrapper .work-detail h2 {
-    width: 60%;
-    height: 60px;
-  }
-
   .work-detail-wrapper .work-detail .btn-group {
     width: 35%;
     order: 3;
   }
-
 
   /* ****About me**** */
 
