@@ -12,6 +12,7 @@ function highlightMenuItem(menuItemID, highlighted) {
 function showProjectDetail(project) {
   console.log("show:", project)
   var container = document.createElement('div')
+  container.id = "project-detail-modal"
   container.classList.add('work-detail-wrapper')
 
   var wrapper = document.createElement('div')
@@ -21,9 +22,11 @@ function showProjectDetail(project) {
   var btnClose = document.createElement('div')
   btnClose.id = "btn-close-detail"
   btnClose.classList.add('close-icon')
-  btnClose.append(document.createElement('i').classList.add('fa-solid', 'fa-xmark'))
+  var icon = document.createElement('i')
+  icon.classList.add('fa-solid', 'fa-xmark')
+  btnClose.append(icon)
   btnClose.addEventListener('click', function() {
-    /* NEEDED */
+    document.getElementById("project-detail-modal").remove()
   })
   var row = document.createElement('div')
   row.classList.add('row')
@@ -53,6 +56,7 @@ function showProjectDetail(project) {
 
   //add description
   var description = document.createElement('p')
+  description.id = "work-detail-description"
   description.textContent = project.description
   wrapper.append(description)
 
@@ -65,17 +69,18 @@ function showProjectDetail(project) {
   btnLive.classList.add('buttons')
   btnSource.classList.add('buttons')
 
-  var btnText = document.createElement('p')
-  btnText.textContent = "See Live"
+  var btnLiveText = document.createElement('p')
+  btnLiveText.textContent = "See Live"
+  btnLive.append(btnLiveText)
   var btnIcon = document.createElement('img')
   btnIcon.src = "images/iconsLive.png"
-  btnLive.append(btnText)
   btnLive.append(btnIcon)
 
-  btnText.textContent = "See Source"
+  var btnSourceText = document.createElement('p')
+  btnSourceText.textContent = "See Source"
   btnIcon = document.createElement('i')
   btnIcon.classList.add('fa-brands', 'fa-github')
-  btnSource.append(btnText)
+  btnSource.append(btnSourceText)
   btnSource.append(btnIcon)
 
   btnGroupe.append(btnLive)
@@ -121,25 +126,24 @@ footerSection.addEventListener('mouseout', () => { highlightMenuItem('footer-des
 -list of work create the work sections
 -click event open or close work detail
 */
+defaultDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
 var listProject = [
-  {name: "Multi-Post Stories Gain+Glory", description: "description 1", image: "images/Project1.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: "description 2", image: "images/Project2.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: "description 3", image: "images/Project3.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: "description 4", image: "images/Project4.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: "description 5", image: "images/Project5.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
-  {name: "Multi-Post Stories Gain+Glory", description: "description 6", image: "images/Project6.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } }
+  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project1.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
+  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project2.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
+  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project3.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
+  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project4.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
+  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project5.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } },
+  {name: "Multi-Post Stories Gain+Glory", description: defaultDescription, image: "images/Project6.png", technologies: ["Ruby on rails", "css", "JavaScript", "html"], link: { live: "", source: "" } }
 ]
 /* Create list of project dynamically */
 var listWork = document.getElementById("list-work")
-for (var i=0; i<listProject.length; i++) {
-  var project = listProject[i]
-
+listProject.forEach(project => {
   let work = document.createElement('li')
   let img = document.createElement('img')
   let detailContainer = document.createElement('div')
   let title = document.createElement('h2')
   let listTag = document.createElement('ul')
-  let btnShowDetail = document.createElement('button')
+  var btnShowDetail = document.createElement('button')
   /* Add Containt */
   work.classList.add('work')
   img.src = project.image
@@ -168,4 +172,4 @@ for (var i=0; i<listProject.length; i++) {
   work.append(detailContainer)
 
   listWork.append(work)
-}
+})
