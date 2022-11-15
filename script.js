@@ -36,3 +36,5 @@ footerSection.addEventListener('mouseover', () => { highlightMenuItem('footer-de
 workSection.addEventListener('mouseout', () => { highlightMenuItem('works-desktop-menu-item', false); });
 aboutMeSection.addEventListener('mouseout', () => { highlightMenuItem('about-me-desktop-menu-item', false); });
 footerSection.addEventListener('mouseout', () => { highlightMenuItem('footer-desktop-menu-item', false); });
+
+/* Work Detail */

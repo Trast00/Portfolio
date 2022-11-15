@@ -334,13 +334,14 @@ footer .contact-wrapper h3 {
 
 /* *****Work Detail Modal***** */
 .work-detail-wrapper {
+  display: none; /* flex */
   position: fixed;
+  width: 100vw;
   height: 100vh;
   z-index: 10;
   top: 0;
   left: 0;
   box-sizing: border-box;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 16px 26px 16px;
@@ -353,18 +354,25 @@ footer .contact-wrapper h3 {
   height: 98%;
   padding: 16px;
   background-color: white;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.work-detail-wrapper .work-detail .btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  order: 6;
 }
 
 .work-detail-wrapper .work-detail img {
   width: 100%;
   max-height: 250px;
   border-radius: 8px;
-}
-
-.work-detail-wrapper .work-detail .list-tag {
-  padding: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  order: 1;
 }
 
 .work-detail-wrapper .work-detail h2 {
@@ -372,9 +380,18 @@ footer .contact-wrapper h3 {
   font-size: 28px;
   line-height: 40px;
   margin: 0;
+  order: 3;
 }
 
-.work-detail-wrapper .work-detail p {
+.work-detail-wrapper .work-detail .list-tag {
+  height: 32px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  order: 4;
+}
+
+#work-detail-description {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -386,11 +403,38 @@ footer .contact-wrapper h3 {
   padding-top: 5px;
   max-height: 32vh;
   overflow: hidden;
+  order: 5;
 }
 
 .work-detail-wrapper .work-detail .buttons {
-  width: 140px;
+  width: 160px;
   height: 48px;
+  padding: 12px 16px;
+  display: inline-flex;
+  margin-right: 12px;
+}
+
+.work-detail-wrapper .work-detail .buttons p {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  }
+
+.work-detail-wrapper .work-detail .buttons img {
+  width: 24px;
+  height: 24px;
+}
+
+.work-detail-wrapper .work-detail .buttons i {
+  font-size: 24px;
+  color: white;
+  margin-left: 8px;
 }
 
 /* ****About me**** */
@@ -716,11 +760,58 @@ footer .contact-wrapper textarea {
     margin: 0;
   }
 
+  /* ****Work Detail*** */
+
+  .work-detail-wrapper .work-detail {
+    width: 100%;
+    height: 90vh;
+    max-width: 800px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid #ebecf0;
+    border-radius: 8px;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  }
+
+  .work-detail-wrapper .work-detail .row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .work-detail-wrapper .work-detail .row .close-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #ebecf0;
+    color: #67798e;
+    font-size: 20px;
+
+  }
+
+  .work-detail-wrapper .work-detail img {
+    max-height: 320px;
+  }
+
+  .work-detail-wrapper .work-detail h2 {
+    width: 60%;
+    height: 60px;
+  }
+
+  .work-detail-wrapper .work-detail .btn-group {
+    width: 35%;
+    order: 3;
+  }
+
+
   /* ****About me**** */
 
   #about-me {
     width: 100%;
-    min-height: 350px;
+    min-height: 300px;
     align-items: flex-end;
     background: url("images/illustration-about-me-desktop@2x.png");
     background-position: top;
