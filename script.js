@@ -11,6 +11,80 @@ function highlightMenuItem(menuItemID, highlighted) {
 
 function showProjectDetail(project) {
   console.log("show:", project)
+  var container = document.createElement('div')
+  container.classList.add('work-detail-wrapper')
+
+  var wrapper = document.createElement('div')
+  wrapper.classList.add('work-detail')
+
+  //add icons-close  element
+  var btnClose = document.createElement('div')
+  btnClose.id = "btn-close-detail"
+  btnClose.classList.add('close-icon')
+  btnClose.append(document.createElement('i').classList.add('fa-solid', 'fa-xmark'))
+  btnClose.addEventListener('click', function() {
+    /* NEEDED */
+  })
+  var row = document.createElement('div')
+  row.classList.add('row')
+  row.append(btnClose)
+  wrapper.append(row)
+
+  //add img
+  var img = document.createElement('img')
+  img.src = project.image
+  img.alt = "Project Image"
+  wrapper.append(img)
+  //add title
+  var title = document.createElement('h2')
+  title.textContent = project.name
+  wrapper.append(title)
+
+  //add list-tag
+  var listTag = document.createElement('ul')
+  listTag.classList.add('list-tag')
+  for (var i=0; i<project.technologies.length; i++){
+    var tag = document.createElement("li")
+    tag.classList.add("tags")
+    tag.textContent = project.technologies[i]
+    listTag.append(tag)
+  }
+  wrapper.append(listTag)
+
+  //add description
+  var description = document.createElement('p')
+  description.textContent = project.description
+  wrapper.append(description)
+
+  //add buttons
+  var btnGroupe = document.createElement('div')
+  btnGroupe.classList.add('btn-group')
+
+  var btnLive = document.createElement('button')
+  var btnSource = document.createElement('button')
+  btnLive.classList.add('buttons')
+  btnSource.classList.add('buttons')
+
+  var btnText = document.createElement('p')
+  btnText.textContent = "See Live"
+  var btnIcon = document.createElement('img')
+  btnIcon.src = "images/iconsLive.png"
+  btnLive.append(btnText)
+  btnLive.append(btnIcon)
+
+  btnText.textContent = "See Source"
+  btnIcon = document.createElement('i')
+  btnIcon.classList.add('fa-brands', 'fa-github')
+  btnSource.append(btnText)
+  btnSource.append(btnIcon)
+
+  btnGroupe.append(btnLive)
+  btnGroupe.append(btnSource)
+  wrapper.append(btnGroupe)
+
+  container.append(wrapper)
+  //show wrapper on body
+  document.body.append(container)
 }
 
 /* toggle Menu button Event */
