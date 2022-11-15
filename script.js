@@ -45,7 +45,7 @@ function showProjectDetail(project) {
   // add list-tag
   const listTag = document.createElement('ul');
   listTag.classList.add('list-tag');
-  for (let i = 0; i < project.technologies.length; i + 1) {
+  for (let i = 0; i < project.technologies.length; i += 1) {
     const tag = document.createElement('li');
     tag.classList.add('tags');
     tag.textContent = project.technologies[i];
@@ -164,7 +164,7 @@ listProject.forEach((project) => {
   title.innerHTML = project.name;
 
   listTag.classList.add('list-tag');
-  for (let j = 0; j < project.technologies.length; j + 1) {
+  for (let j = 0; j < project.technologies.length; j += 1) {
     const tag = document.createElement('li');
     tag.classList.add('tags');
     tag.textContent = project.technologies[j];
