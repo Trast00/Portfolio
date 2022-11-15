@@ -334,7 +334,7 @@ footer .contact-wrapper h3 {
 
 /* *****Work Detail Modal***** */
 .work-detail-wrapper {
-  display: none; /* flex */
+  display: flex; /* flex */
   position: fixed;
   width: 100vw;
   height: 100vh;
