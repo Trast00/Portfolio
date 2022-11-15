@@ -62,7 +62,7 @@ header {
   top: 0;
   width: 100vw;
   height: 58px;
-  z-index: 99;
+  z-index: 9;
   display: flex;
   justify-content: space-between;
   color: var(--color-secondary);
@@ -332,6 +332,67 @@ footer .contact-wrapper h3 {
   background-color: var(--color-primary-dark);
 }
 
+/* *****Work Detail Modal***** */
+.work-detail-wrapper {
+  position: fixed;
+  height: 100vh;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px 26px 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.work-detail-wrapper .work-detail {
+  width: 100%;
+  height: 98%;
+  padding: 16px;
+  background-color: white;
+}
+
+.work-detail-wrapper .work-detail img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 8px;
+}
+
+.work-detail-wrapper .work-detail .list-tag {
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.work-detail-wrapper .work-detail h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.work-detail-wrapper .work-detail p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
+  margin: 0;
+  padding-bottom: 12px;
+  padding-top: 5px;
+  max-height: 32vh;
+  overflow: hidden;
+}
+
+.work-detail-wrapper .work-detail .buttons {
+  width: 140px;
+  height: 48px;
+}
+
 /* ****About me**** */
 
 #about-me {
@@ -482,6 +543,9 @@ footer .contact-wrapper textarea {
 .social-icon {
   transition: all 0.3s;
   font-size: 1.5rem;
+  color: #505f79;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .social-icon:hover {
