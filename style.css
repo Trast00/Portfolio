@@ -926,3 +926,13 @@ footer .contact-wrapper textarea {
     row-gap: 24px;
   }
 }
+
+/* Contact Validation - Email Form */
+
+.error {
+  color: red;
+  font-weight: bold;
+  padding-top: 27px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
