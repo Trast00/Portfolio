@@ -412,7 +412,17 @@ footer .contact-wrapper h3 {
 }
 
 .work-detail-wrapper .work-detail .row {
-  display: none;
+  width: 88%;
+  height: 32px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 11;
+  right: 38px;
+  left: 0;
+  top: 38px;
+  color: white;
+  font-size: 24px;
 }
 
 .work-detail-wrapper .work-detail .btn-group {
@@ -787,6 +797,9 @@ footer .contact-wrapper textarea {
   .work-detail-wrapper .work-detail .row {
     width: 100%;
     height: 32px;
+    position: relative;
+    top: 0;
+    margin-bottom: 8px;
     display: flex;
     justify-content: flex-end;
   }
