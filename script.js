@@ -186,16 +186,19 @@ listProject.forEach((project) => {
 });
 
 /* Form Validation */
-var form = document.getElementById("form")
-var error = document.getElementById('error')
+const form = document.getElementById('form');
+const error = document.getElementById('error');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  var email = form.elements.email;
-  if(email.validity.typeMismatch 
-    || email.value.toLowerCase() != email.value
+  const { email } = form.elements;
+  if (email.validity.typeMismatch
+    || email.value.toLowerCase() !== email.value
     || !email.validity.valid) {
-    error.textContent = "Invalid email. Please ensure you have the correct email address; also, check that the content of the email field is in lowercase. Thank you."
-  }else {
-    form.submit()
+    error.textContent = 'Invalid email. Please ensure you have the correct email address; also, check that the content of the email field is in lowercase. Thank you.';
+    email.setCustomValidity('email is should be in lower case');
+    email.reportValidity();
+  } else {
+    email.setCustomValidity('');
+    form.submit();
   }
-})
+});
