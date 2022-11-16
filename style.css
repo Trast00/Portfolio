@@ -586,6 +586,10 @@ footer .contact-wrapper textarea {
   min-height: 100px;
 }
 
+.errorOutline {
+  border: 2px solid red !important;
+}
+
 .error {
   color: red;
   font-weight: bold;

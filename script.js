@@ -190,15 +190,14 @@ const form = document.getElementById('form');
 const error = document.getElementById('error');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const { email } = form.elements;
+  const email = document.getElementById('email');
   if (email.validity.typeMismatch
     || email.value.toLowerCase() !== email.value
     || !email.validity.valid) {
     error.textContent = 'Invalid email. Please ensure you have the correct email address; also, check that the content of the email field is in lowercase. Thank you.';
-    email.setCustomValidity('email is should be in lower case');
-    email.reportValidity();
+    email.classList.add('errorOutline');
   } else {
-    email.setCustomValidity('');
+    email.classList.remove('errorOutline');
     form.submit();
   }
 });
