@@ -208,3 +208,11 @@ window.addEventListener("beforeunload", () => {
   var savedData = {name: form.name.value, email: form.email.value, message: form.message.value}
   window.localStorage.setItem("formData", JSON.stringify(savedData))
 })
+
+window.addEventListener("load", () => {
+  var savedData = JSON.parse(window.localStorage.getItem("formData"));
+  form.name.value = savedData.name
+  form.email.value = savedData.email
+  form.message.value = savedData.message
+  console.log(savedData)
+})
