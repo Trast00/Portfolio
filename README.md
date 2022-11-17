@@ -5,10 +5,11 @@ This is my personnal portfolio of Microverse Full time program. The goal is to w
 
 ### Built With 
 - HTML/CSS
+- JavaScript
 
 ## Live Demo
 
-[Live Demo Link](https://trast00.github.io/)
+[Live Demo Link](https://trast00.github.io/Portfolio/)
 
 ## Authors
 

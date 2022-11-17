@@ -194,10 +194,17 @@ form.addEventListener('submit', (event) => {
   if (email.validity.typeMismatch
     || email.value.toLowerCase() !== email.value
     || !email.validity.valid) {
-    error.textContent = 'Invalid email. Please ensure you have the correct email address; also, check that the content of the email field is in lowercase. Thank you.';
+    error.textContent = 'Invalid email. Please ensure you have the correct email address. Thank you!';
     email.classList.add('errorOutline');
   } else {
     email.classList.remove('errorOutline');
+    error.textContent = ''
     form.submit();
   }
 });
+
+/* Form Save and Load Local Storage */
+window.addEventListener("beforeunload", () => {
+  var savedData = {name: form.name.value, email: form.email.value, message: form.message.value}
+  window.localStorage.setItem("formData", JSON.stringify(savedData))
+})
