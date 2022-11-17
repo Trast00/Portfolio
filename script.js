@@ -198,21 +198,20 @@ form.addEventListener('submit', (event) => {
     email.classList.add('errorOutline');
   } else {
     email.classList.remove('errorOutline');
-    error.textContent = ''
+    error.textContent = '';
     form.submit();
   }
 });
 
 /* Form Save and Load Local Storage */
-window.addEventListener("beforeunload", () => {
-  var savedData = {name: form.name.value, email: form.email.value, message: form.message.value}
-  window.localStorage.setItem("formData", JSON.stringify(savedData))
-})
+window.addEventListener('beforeunload', () => {
+  const savedData = { name: form.name.value, email: form.email.value, message: form.message.value };
+  window.localStorage.setItem('formData', JSON.stringify(savedData));
+});
 
-window.addEventListener("load", () => {
-  var savedData = JSON.parse(window.localStorage.getItem("formData"));
-  form.name.value = savedData.name
-  form.email.value = savedData.email
-  form.message.value = savedData.message
-  console.log(savedData)
-})
+window.addEventListener('load', () => {
+  const savedData = JSON.parse(window.localStorage.getItem('formData'));
+  form.name.value = savedData.name;
+  form.email.value = savedData.email;
+  form.message.value = savedData.message;
+});
